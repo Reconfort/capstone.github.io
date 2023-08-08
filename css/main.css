@@ -6,6 +6,10 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #fff;
   position: fixed;
@@ -320,6 +324,11 @@
 
 .menuContainer {
   display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Styles for screens not wider than 768px */
