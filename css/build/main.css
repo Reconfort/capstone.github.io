@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header .top-header {
+  background-color: #3e3e3e;
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 190px;
+  color: #fff;
+}
+
+.header .main-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 190px;
+}
+
+.header .main-header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */

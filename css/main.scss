@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$dark-gray: #272a31;
+$gray: #868686;
+$light-gray: #d3d3d3;
+$white: #fff;
+$red: #ec5242;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  background-color: $white;
+  position: fixed;
+  width: 100vw;
+
+  .top-header {
+    background-color: $dark-gray;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 20px;
+    padding: 10px 190px;
+    color: $white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main-header {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px 190px;
+
+    .menu-bar {
+      display: none;
+    }
+
+    img {
+      width: 130px;
+      height: 51px;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      color: $gray;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+
+    .active {
+      color: $red;
+    }
+
+    button {
+      background-color: $white;
+      width: 123px;
+      height: 48px;
+      padding: 0 18px;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid $red;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      color: $red;
+    }
+  }
+}
+
+.welcome {
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 50px 190px;
+  gap: 63px;
+
+  p {
+    border: 8.497px solid $white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36.111px;
+    letter-spacing: -0.255px;
+    width: 60%;
+    padding: 10px;
+    background-color: #f9f9fa;
+  }
+
+  span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $gray;
+
+    h3 {
+      font-size: 42.484px;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: -1.399px;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 0px;
+      letter-spacing: -0.552px;
+    }
+  }
+}
+
+.program {
+  background-image: url("../assets/programBackground.png");
+  padding: 100px 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $white;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .line {
+      background-color: $red;
+      width: 40%;
+      height: 3px;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    gap: 5px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #16181e91;
+      padding: 34px 12px;
+
+      h2 {
+        color: $red;
+      }
+
+      p {
+        text-align: center;
+        color: $white;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+
+  button {
+    display: none;
+  }
+
+  .morelink {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    text-decoration-line: underline;
+  }
+}
+
+.speakers {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 190px;
+  gap: 32px;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $dark-gray;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .line {
+      background-color: $red;
+      width: 40%;
+      height: 3px;
+    }
+  }
+
+  .speaker-container1 {
+    display: none;
+  }
+
+  .speaker-container {
+    display: block;
+  }
+
+  .card-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card {
+      width: 48%;
+      display: flex;
+      gap: 15px;
+
+      .details {
+        margin-top: 20px;
+
+        .title {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.48px;
+        }
+
+        .line {
+          background-color: $gray;
+          width: 10%;
+          height: 3px;
+          margin: 10px 0;
+        }
+
+        h4 {
+          color: #f78c89;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 21px;
+        }
+
+        p {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+
+          letter-spacing: -0.7px;
+        }
+      }
+    }
+  }
+
+  .more {
+    display: none;
+  }
+
+  .less {
+    display: none;
+  }
+
+  button {
+    width: 100%;
+    display: flex;
+    padding: 12px 0px 13px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: none;
+  }
+}
+
+.partner {
+  padding: 60px 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-gray;
+  gap: 24px;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $gray;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .line {
+      background-color: $red;
+      width: 40%;
+      height: 3px;
+    }
+  }
+
+  .container {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.footer {
+  padding: 40px 190px;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Styles for screens not wider than 768px */
+@media screen and (max-width: 768px) {
+  .header {
+    .top-header {
+      display: none;
+    }
+
+    .main-header {
+      background-color: $white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 10px 25px;
+
+      .menu-bar {
+        display: block;
+        width: 31px;
+        height: 27px;
+      }
+
+      img {
+        width: 130px;
+        height: 51px;
+      }
+
+      ul {
+        display: none;
+      }
+
+      button {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .welcome {
+    padding: 10px 25px;
+
+    img {
+      width: 86vw;
+    }
+
+    p {
+      border: 8.497px solid $white;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: $gray;
+
+      h3 {
+        font-size: 42.484px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: -3.399px;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0px;
+        letter-spacing: -0.552px;
+      }
+    }
+  }
+
+  .program {
+    padding: 100px 25px;
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: $white;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.3px;
+      }
+
+      .line {
+        background-color: $red;
+        width: 40%;
+        height: 3px;
+      }
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .card {
+        display: flex;
+        flex-direction: row;
+
+        h2 {
+          color: $red;
+          text-align: left;
+          width: 20%;
+        }
+
+        p {
+          color: $white;
+          text-align: left;
+          width: 60%;
+        }
+      }
+    }
+
+    button {
+      background-color: $red;
+      color: $white;
+      width: 100%;
+      border: none;
+      padding: 20px;
+      display: block;
+    }
+
+    .morelink {
+      display: none;
+    }
+
+  }
+
+  .speakers {
+    background-color: $white;
+    padding: 40px 20px;
+    gap: 32px;
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: $dark-gray;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 93.333% */
+        letter-spacing: -0.3px;
+      }
+
+      .line {
+        background-color: $red;
+        width: 40%;
+        height: 3px;
+      }
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .card {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+
+    .speaker-container1 {
+      display: none;
+    }
+
+    .speaker-container {
+      display: block;
+    }
+
+    .more {
+      display: block;
+    }
+
+    .less {
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      display: flex;
+      padding: 12px 0px 13px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      display: block;
+    }
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
