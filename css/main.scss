@@ -288,7 +288,6 @@ $red: #ec5242;
           font-style: normal;
           font-weight: 700;
           line-height: 24px;
-
           letter-spacing: -0.7px;
         }
       }
@@ -306,7 +305,7 @@ $red: #ec5242;
   button {
     width: 100%;
     display: flex;
-    padding: 12px 0px 13px 0px;
+    padding: 12px 0 13px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -364,6 +363,10 @@ $red: #ec5242;
     flex-direction: column;
     gap: 12px;
   }
+}
+
+.menuContainer {
+  display: none;
 }
 
 /* Styles for screens not wider than 768px */
@@ -500,7 +503,6 @@ $red: #ec5242;
     .morelink {
       display: none;
     }
-
   }
 
   .speakers {
@@ -521,6 +523,7 @@ $red: #ec5242;
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
+
         /* 93.333% */
         letter-spacing: -0.3px;
       }
@@ -568,7 +571,7 @@ $red: #ec5242;
     button {
       width: 100%;
       display: flex;
-      padding: 12px 0px 13px 0px;
+      padding: 12px 0 13px 0;
       justify-content: center;
       align-items: center;
       gap: 10px;
@@ -582,5 +585,68 @@ $red: #ec5242;
 
   .footer {
     display: none;
+  }
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    transform: translateY(-200%);
+    // transform: translateZ();
+    background-color: #272a31e1;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      color: $white;
+
+      button{
+        background-color: transparent;
+        color: $white;
+        padding: 10px 30px;
+        border: 1px solid $gray;
+        font-size: 2rem;
+        font-weight: 200;
+        transition: ease-in-out all 0.1s;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        transform: scale(1.1);
+        background-color: $light-gray;
+        color: $dark-gray;
+      }
+      
+      button:active {
+        transform: scale(0.9);
+        background-color: $light-gray;
+        color: $dark-gray;
+        transition: ease-in-out all 0.1s;
+        border-radius: 100px;
+      }
+      
+      li{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 200;
+        transition: ease-in-out all 0.5s;
+        cursor: pointer;
+        padding: 1.5rem 0;
+      }
+
+      li:hover{
+        font-weight: 500;
+        transform: scale(1.4);
+      }
+    }
   }
 }

@@ -106,7 +106,7 @@ There is no future build.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Welcome contributions, issues, feature requests! Many thanks to Cindy Shin on Behance. 🙌
 
 Feel free to check the [issues page](https://github.com/Reconfort/reconfort.github.io/issues).
 

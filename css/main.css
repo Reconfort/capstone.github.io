@@ -264,7 +264,7 @@
 .speakers button {
   width: 100%;
   display: flex;
-  padding: 12px 0px 13px 0px;
+  padding: 12px 0 13px 0;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -316,6 +316,10 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.menuContainer {
+  display: none;
 }
 
 /* Styles for screens not wider than 768px */
@@ -485,7 +489,7 @@
   .speakers button {
     width: 100%;
     display: flex;
-    padding: 12px 0px 13px 0px;
+    padding: 12px 0 13px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -496,6 +500,61 @@
   }
   .footer {
     display: none;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    transform: translateY(-200%);
+    background-color: rgba(39, 42, 49, 0.8823529412);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuContainer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+  }
+  .menuContainer ul button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border: 1px solid #868686;
+    font-size: 2rem;
+    font-weight: 200;
+    transition: ease-in-out all 0.1s;
+    cursor: pointer;
+  }
+  .menuContainer ul button:hover {
+    transform: scale(1.1);
+    background-color: #d3d3d3;
+    color: #272a31;
+  }
+  .menuContainer ul button:active {
+    transform: scale(0.9);
+    background-color: #d3d3d3;
+    color: #272a31;
+    transition: ease-in-out all 0.1s;
+    border-radius: 100px;
+  }
+  .menuContainer ul li {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+    transition: ease-in-out all 0.5s;
+    cursor: pointer;
+    padding: 1.5rem 0;
+  }
+  .menuContainer ul li:hover {
+    font-weight: 500;
+    transform: scale(1.4);
   }
 }
 
