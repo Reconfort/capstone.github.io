@@ -15,6 +15,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
+  - [Live](#livedemo)
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
@@ -57,6 +58,13 @@ HTML/CSS &amp; JavaScript capstone project - Conference page
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
+
+### Live
+
+Live preview
+
+
+- Preview: [@Capstone](https://capstone.github.io)
 
 ### Setup
 
@@ -106,7 +114,7 @@ There is no future build.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Welcome contributions, issues, feature requests! Many thanks to Cindy Shin on Behance. 🙌
+I would like to thank Microverse staff, Reviewer, Mentor! and Many thanks to Cindy Shin 🙌 .
 
 Feel free to check the [issues page](https://github.com/Reconfort/reconfort.github.io/issues).
 
