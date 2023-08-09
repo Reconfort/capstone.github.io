@@ -425,6 +425,7 @@ a {
   .program .card-container .card h2 {
     color: #ec5242;
     text-align: left;
+    font-size: 14px;
     width: 20%;
   }
   .program .card-container .card p {
