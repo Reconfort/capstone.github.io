@@ -1,12 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone - project</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone - Project</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="header">
+      <ul class="top-header">
+        <li>
+          <img src="./assets/facebook.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/twitter.png" alt="" />
+        </li>
+        <li>English</li>
+        <li>My page</li>
+        <li>Logout</li>
+      </ul>
+      <div class="main-header">
+        <img src="./assets/mobile_menu.png" alt="" class="menu-bar" />
+        <a href="#welcome"><img src="./assets/logo.png" alt="" /></a>
+        <ul>
+          <li class="active"> <a href="about.html">About</a></li>
+          <li> <a href="#program"> Program </a> </li>
+          <li> <a href="#join"> Join </a> </li>
+          <li> <a href="#sponsor"> Sponsor </a> </li>
+          <li> <a href="#news"> News </a> </li>
+        </ul>
+
+        <button type="button">CC Campaign</button>
+      </div>
+    </nav>
+
+    <!-- Welcome Content  -->
+    <section class="welcome" id="welcome">
+      <img src="./assets/theme.png" alt="" />
+      <p>
+        A joyful celebration believing in the value of openness and sharing,
+        creating a positive change with people from over 80 countries is taking
+        place in October, in Korea.
+      </p>
+
+      <span>
+        <h3>2015.10.15(THU) ~ 16(FRI)</h3>
+        <h5>@ National Museum of Karea, Art Center Nabi and more</h5>
+      </span>
+    </section>
+
+    <!-- Program Section  -->
+    <section class="program" id="program">
+      <div class="head">
+        <h2>Main program</h2>
+        <div class="line"></div>
+      </div>
+      <ul class="card-container">
+        <li class="card">
+          <img src="./assets/program_icon_01.png" alt="" />
+          <h2>Lecture</h2>
+          <p>
+            Listen to the speakers from various countries about the messages of
+            sharing and opening.
+          </p>
+        </li>
+        <li class="card">
+          <img src="./assets/program_icon_02.png" alt="" />
+          <h2>CC Exhibition</h2>
+          <p>
+            Appreciate various creations applying CC license of artists,
+            organized from Art Center Nabi
+          </p>
+        </li>
+        <li class="card">
+          <img src="./assets/program_icon_03.png" alt="" />
+          <h2>Forum</h2>
+          <p>
+            Have the time to share your thoughts and opinions with experts for
+            each topic.
+          </p>
+        </li>
+        <li class="card">
+          <img src="./assets/program_icon_04.png" alt="" />
+          <h2>Workshop</h2>
+          <p>
+            Try creating your own work using open source license rather than
+            just watching at it.
+          </p>
+        </li>
+        <li class="card">
+          <img src="./assets/program_icon_05.png" alt="" />
+          <h2>CC Ignite</h2>
+          <p>
+            get opportunities to network with CC affiliates around the world,
+            also after the summit.
+          </p>
+        </li>
+      </ul>
+
+      <p class="morelink">See the whole program</p>
+      <button type="button">Join CC Global Summit 2015</button>
+    </section>
+
+    <!-- Speaker section  -->
+    <section class="speakers" id="join">
+      <div class="head">
+        <h2>Featured Speakers</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="speaker-container1 card-container">
+        <!-- <div class="card">
+          <img src="./assets/user1.png" alt="" />
+          <div class="details">
+            <h3 class="title">Yochai Benkler</h3>
+            <h4>
+              Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
+              School
+            </h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/user2.png" alt="" />
+          <div class="details">
+            <h3 class="title">Kilnam Chon</h3>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user3.png" alt="" />
+          <div class="details">
+            <h3 class="title">SohYeong Noh</h3>
+            <h4>Director of Art Centre Nabi and a board member of CC Korea</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user4.png" alt="" />
+          <div class="details">
+            <h3 class="title">Julia Leda</h3>
+            <h4>President of Young Pirates of Europe</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user5.png" alt="" />
+          <div class="details">
+            <h3 class="title">Lila tretikov</h3>
+            <h4>Executive Director of the Wikimedia Foundation</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user6.png" alt="" />
+          <div class="details">
+            <h3 class="title">Ryan Merkley</h3>
+            <h4>CEO of Creativve Commons, ex COO of the Mozilla Foundation</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <div class="speaker-container card-container">
+        <!-- <div class="card">
+          <img src="./assets/user1.png" alt="" />
+          <div class="details">
+            <h3 class="title">Yochai Benkler</h3>
+            <h4>
+              Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
+              School
+            </h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/user2.png" alt="" />
+          <div class="details">
+            <h3 class="title">Kilnam Chon</h3>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user3.png" alt="" />
+          <div class="details">
+            <h3 class="title">SohYeong Noh</h3>
+            <h4>Director of Art Centre Nabi and a board member of CC Korea</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user4.png" alt="" />
+          <div class="details">
+            <h3 class="title">Julia Leda</h3>
+            <h4>President of Young Pirates of Europe</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user5.png" alt="" />
+          <div class="details">
+            <h3 class="title">Lila tretikov</h3>
+            <h4>Executive Director of the Wikimedia Foundation</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div>
+        <div class="card hidden">
+          <img src="./assets/user6.png" alt="" />
+          <div class="details">
+            <h3 class="title">Ryan Merkley</h3>
+            <h4>CEO of Creativve Commons, ex COO of the Mozilla Foundation</h4>
+            <div class="line"></div>
+            <p>
+              Benkler studies commons-based peer production, and published his
+              seminal book, The Wealth of Networks in 2006
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <button type="button" class="more">
+        MORE
+        <img src="./assets/arrow_down 1.png" alt="" />
+      </button>
+      <button type="button" class="less">
+        LESS
+        <img src="./assets/arrow_down 1.png" alt="" />
+      </button>
+    </section>
+
+    <!-- Partner Section  -->
+    <section class="partner" id="sponsor">
+      <div class="head">
+        <h2>Main program</h2>
+        <div class="line"></div>
+      </div>
+      <div class="container">
+        <img src="./assets/mozilla.png" alt="" />
+        <img src="./assets/google.png" alt="" />
+        <img src="./assets/naver.png" alt="" />
+        <img src="./assets/daumkakaologo.png" alt="" />
+        <img src="./assets/airbnb.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <section class="footer" id="news">
+      <img src="./assets/cck-logo.png" alt="" />
+      <div class="info">
+        <p>2023 Creative Commons Korea. Some Rights Reserved.</p>
+        <p>
+          달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시
+          2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한 이용기능
+          내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를
+          보세요.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- HumbergerMenu  -->
+    <section class="menuContainer">
+      <ul>
+        <button type="button" class="closeMenu">Close</button>
+          <li class="active" id="link1"> <a href="about.html">About</a></li>
+          <li id="link2"> <a href="#program"> Program </a> </li>
+          <li id="link3"> <a href="#join"> Join </a> </li>
+          <li id="link4"> <a href="about.html#sponsor"> Sponsor </a> </li>
+          <li id="link5"> <a href="about.html#news"> News </a> </li>
+      </ul>
+    </section>
     
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
 </html>
